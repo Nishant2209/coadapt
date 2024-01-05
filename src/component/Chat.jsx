@@ -16,7 +16,7 @@ const Chat = () => {
   const containerRef = useRef(null);
 
   const MODEL_NAME = "gemini-pro";
-  const API_KEY = "AIzaSyC4tkrca_vCgJObjLKHvTNS_7l6w5eg1MA";
+  const API_KEY = process.env.REACT_APP_API_KEY;
 
   const handleClick = async (prompt) => {
     // Save user's input (prompt) immediately
